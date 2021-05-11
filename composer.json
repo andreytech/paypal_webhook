@@ -1,0 +1,26 @@
+{
+    "name": "andreytech/paypal_webhook",
+    "description": "Paypal webhook",
+    "authors": [
+        {
+            "name": "Andrey Khomyakov",
+            "email": "yourwebwizard@gmail.com"
+        }
+    ],
+    "require": {
+        "paypal/paypal-checkout-sdk": "1.0.1",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Andreytech\\PaypalWebhook\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Andreytech\\PaypalWebhook\\Providers\\PaypalServiceProvider"
+            ]
+        }
+    }
+}
